@@ -1,8 +1,7 @@
-const fs = require('fs');
-const promptUser = require('./lib/promptUser');
+const promptUser = require('./lib/promptUser.js');
 
 promptUser()
-    .then(employeeData => {
+    /*.then(employeeData => {
         return generatePage(employeeData)
     })
     .then(pageHTML => {
@@ -17,4 +16,4 @@ promptUser()
     })
     .catch(err => {
         console.log(err);
-    });
+    }); */
