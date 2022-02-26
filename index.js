@@ -1,4 +1,5 @@
 const promptUser = require('./lib/promptUser.js');
+const {writeFile, copyFile} = require('./lib/generateSite.js');
 
 promptUser()
     /*.then(employeeData => {
