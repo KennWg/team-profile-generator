@@ -1,8 +1,9 @@
 const promptUser = require('./lib/promptUser.js');
+const generatePage = require('./src/page-template.js');
 const {writeFile, copyFile} = require('./lib/generateSite.js');
 
 promptUser()
-    /*.then(employeeData => {
+    .then(employeeData => {
         return generatePage(employeeData)
     })
     .then(pageHTML => {
@@ -17,4 +18,4 @@ promptUser()
     })
     .catch(err => {
         console.log(err);
-    }); */
+    }); 
